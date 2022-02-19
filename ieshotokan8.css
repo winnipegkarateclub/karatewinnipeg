@@ -1,0 +1,304 @@
+/* css Winnipeg Shotokan Karate default style */
+
+
+/* reset browsers for compatibility */
+
+/* Don't forget to set a foreground and background color 
+   on the 'html' or 'body' element! */
+
+html, body, div, span,
+applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dd, dl, dt, li, ol, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	border: 0;
+
+}
+
+
+
+/* end of reset browsers for compatibility background-image: url(images/jump.png); 
+border: 1px solid gray;
+
+*/
+
+
+/* http://scarfoo.com/archives/16 */
+
+/* http://allinthehead.com/retro/338/supersleight-jquery-plugin*/
+/* basic elements */
+html {
+
+	margin: 0;
+	padding: 0;
+	}
+
+/*  #linklist a  {
+    behavior: url(iepngfix.htc); 
+}
+
+body {
+behavior: url("csshover3.htc");
+} */
+
+
+p { 
+	margin-top: 1em; 
+	text-align: justify;
+	}
+
+
+#homepage, #highlighted_events a {
+background-repeat: no-repeat;
+background-color: black;
+background-position: 1100px 0px;
+	background-image: url(images/jump2_nottran.jpg);
+}
+
+#aboutshotokanpage {
+	background-image: url(images/alternateback3_nottran.jpg);
+	background-repeat: no-repeat;
+	background-position: 1050px 0px;
+	background-color: black;
+	}
+
+
+#contactpage {
+	background-image: url(images/imagetest_nottran.jpg);
+	background-repeat: no-repeat;
+	background-position: 1170px 0px;
+	background-color: black;
+	}	
+
+#gallerypage {
+	background-image: url(images/kidtest_nottran.jpg);
+	background-repeat: no-repeat;
+	background-position: 1280px 0px;
+	background-color: black;
+	}	
+
+#linkspage  {
+	background-image: url(images/karate_woman_nottran.jpg);
+	background-repeat: no-repeat;
+	background-position: 1150px 0px;
+	background-color: black;
+	}
+
+
+#trainingpage  {
+	background-image: url(images/adriantest2_nottran.jpg);
+	background-repeat: no-repeat;
+	background-position: 1150px 0px;
+	background-color: black;
+	}
+
+
+#title h1 {
+	margin-top: 0px; /* trying to get white background kludge maybe delete*/
+	font: 320% Arial, sans-serif;
+	font-weight: 300;
+	letter-spacing: -3px;
+	color: #333333;   
+	text-align: center;
+	text-indent: 200px;
+	margin-bottom: 20px;
+	}
+
+#sensei {
+	top: 10px;
+	margin-bottom: 60px;
+	left: 150px;
+	text-indent: 12em;
+	font-style: normal;
+	line-height: 2em;
+	font: 90% Arial, sans-serif;
+	font-weight: bold;
+	padding-right: 50px;
+	padding-top: 30px;
+	z-index: 16;
+	text-align: center;
+	}
+
+/* links content */
+
+
+
+#subs {
+
+	font-style: normal;
+	line-height: 2em;
+	text-align: left;
+	font: 110% Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0px;
+	margin: 0px;
+	}
+
+#unsubs {
+
+	font-style: normal;
+	text-align: left;
+	font: 110% Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0px;
+	margin: 0px;
+
+	}
+
+
+#nav li {
+	list-style-type: none; /* gets rid of list bullets  */
+	margin: 0px;
+	padding: 0px;
+	}
+
+	
+
+#nav li ul {
+	position: absolute;
+	width: 10em;
+	left: -999em;
+	}
+
+#nav li:hover #unsubs {
+	position: absolute;
+	top: 265px;
+	right: 40px;
+	left: 120px;
+	z-index: 50;
+	}
+
+#nav li:hover #subs {
+	position: absolute;
+	top: 310px;
+	right: 40px;
+	left: 120px;
+	z-index: 50;
+	}	
+
+
+/* outline:none for firefox to remove outline when clicking on area*/
+
+#subs a {text-decoration: none;
+	color: #333333; 
+	background: none;
+
+	 }
+#subs a:hover {text-decoration: none;
+	background: none;
+	color: #F30; }
+
+#unsubs a {text-decoration: none;
+	color: #333333; 
+	background: none;
+	 }
+#unsubs a:hover {text-decoration: none;
+	background: none;
+	color: #F30;}
+
+
+
+/* content box for text*/
+
+
+
+
+#highlighted_events a {background: url(images/event_bannerblank.png)
+	 no-repeat; outline: none;}
+
+#highlighted_events a:hover {background: url(images/event_banner4.png) 
+	 no-repeat; outline: none; }
+
+#highlighted_events a {
+
+  cursor: pointer; /* hand-shaped cursor */
+	display: block; 
+	width: 420px; height: 206px;
+	 }
+#highlighted_events {
+	text-indent: -9000px;
+text-decoration: none;
+	outline:none;
+
+	}
+
+#highlighted_events {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 1;
+			}
+
+
+
+#Lasalle a {
+
+	display: block; 
+	width: 224px; height: 165px;
+	 }
+
+#Lasalle a {
+	color: #CC0000;
+	text-decoration: none;
+	outline:none;
+text-indent: -9000px;
+
+}
+
+
+#Lasalle a {background: url(images/LaSalle_school.jpg)
+	 no-repeat; outline:none;}
+#Lasalle a:hover {background: url(images/LaSalle_school_map.png) 
+	 no-repeat; outline:none; }
+
+
+#Lasalle {
+		float: left;
+		position: relative;
+		left: 50px;
+		margin-bottom: 20px;
+		width: 224px;
+	border: 2px solid #989898;
+		}
+
+#table {
+	font-style: normal;
+	text-align: center;
+	font: 100% Arial, sans-serif;
+	margin-left: 20px;
+	margin-right: 20px;
+	caption-side: bottom;
+	clear: both;
+	line-height: 2em;
+	outline: thin dotted black;
+	}
+
+td, th {
+	border: thin dotted black;
+	}
+
+/* position:relative gives an element position without changing its in-flow location-then assign z-index*/
+#main, #sensei  { position: relative; }
+
+/*html, body, div, span,
+applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dd, dl, dt, li, ol, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	border: 0;
+border: 1px solid gray;
+} */
+
+

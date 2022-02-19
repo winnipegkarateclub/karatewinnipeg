@@ -1,0 +1,1186 @@
+/* css Winnipeg Shotokan Karate default style */
+
+
+/* reset browsers for compatibility */
+
+/* Don't forget to set a foreground and background color 
+   on the 'html' or 'body' element! */
+
+html, body, div, span,
+applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dd, dl, dt, li, ol, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	border: 0;
+
+
+}
+
+
+
+/* end of reset browsers for compatibility background-image: url(images/jump.png); 
+border: 1px solid gray;
+
+*/
+
+
+/* http://scarfoo.com/archives/16 */
+
+/* http://allinthehead.com/retro/338/supersleight-jquery-plugin */
+/* basic elements */
+html {
+
+	margin: 0;
+	padding: 0;
+	}
+
+
+
+/* #homepage, #'ed_events a { */
+
+#homepage, #highlighted_events a {
+background-repeat: no-repeat;
+background-color: black;
+background-position: 1100px 0px;
+	background-image: url(images/jump2_nottran.jpg);
+}
+
+#aboutshotokanpage {
+	background-image: url(images/alternateback3_nottran.jpg);
+	background-repeat: no-repeat;
+	background-position: 1050px 0px;
+	background-color: black;
+	}
+
+
+#contactpage {
+	background-image: url(images/imagetest_nottran.jpg);
+	background-repeat: no-repeat;
+	background-position: 1170px 0px;
+	background-color: black;
+	}	
+
+#gallerypage {
+	background-image: url(images/kidtest_nottran.jpg);
+	background-repeat: no-repeat;
+	background-position: 1280px 0px;
+	background-color: black;
+	}	
+
+#linkspage  {
+	background-image: url(images/karate_woman_nottran.jpg);
+	background-repeat: no-repeat;
+	background-position: 1150px 0px;
+	background-color: black;
+	}
+
+
+#trainingpage  {
+	background-image: url(images/adriantest2_nottran.jpg);
+	background-repeat: no-repeat;
+	background-position: 1150px 0px;
+	background-color: black;
+	}
+
+
+body { 
+	font: 90% Georgia, Arial, sans-serif;
+	line-height: 1.75em;
+	text-align: justify;
+	margin: 0; 
+	padding: 0;
+}
+
+#main, #main2 {
+	float: right;
+	width: 601px;
+	padding: 30px;
+	padding-top: 0px;
+	margin: 0px 20px -30px 20px;
+	z-index: 12;
+	}
+
+
+
+p { 
+	margin-top: 1em; 
+	text-align: justify;
+	}
+
+
+h1 {
+	font: 120% Arial, sans-serif;
+	font-weight: bold;
+	letter-spacing: 0px;
+	color: #333333; 
+	text-align: center;
+	}
+
+
+
+#title h1 {
+margin-top: 0px; /* trying to get white background kludge maybe delete*/
+	font: 330% Arial, sans-serif;
+	font-weight: 300;
+	letter-spacing: -3px;
+	color: #333333;   
+	text-align: center;
+	text-indent: 210px;
+
+	}
+
+h1 em { 
+	font: 100% Arial, sans-serif;
+	font-weight: bold;
+	color: #CC0000; 
+
+	}
+
+
+
+
+
+#kata_intro p em { 
+	font: 130% Arial, sans-serif;
+	font-weight: normal;
+	color: #CC0000; 
+	}
+
+#main p em { 
+	font: 130% Arial, sans-serif;
+	font-weight: normal;
+	color: #CC0000; 
+	}
+
+
+
+/* BEGINNING OF LIST CONTENT*/
+
+/* sets up block size for each image */
+#nav a{ 
+
+	display: block; width: 165px; height: 104px;   cursor: pointer; /* hand-shaped cursor */
+
+
+	 }
+#subs a {
+	display: block; width: 40px; height: 20px; 
+
+
+	 }
+
+/* sets up block size in which to display image items */
+#nav li {
+
+	display: block; 
+	width: 165px; height: 58px; 
+	 }
+
+#nav {
+	margin-bottom: 4em;
+	text-indent: -9000px;
+
+	}
+
+
+#subs, #unsubs {
+	text-indent: 20px;
+
+
+	}
+
+ li span {
+	margin-left: 20px;
+	}
+
+/* subs text block */
+
+
+#subs a {
+	width: 110px;
+	height: 28px;
+	padding-top: 10px;
+
+	}
+
+#unsubs a {
+	width: 100px;
+	height: 38px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+
+	}
+
+
+#subs li {
+	display: block; 
+	width: 10px; height: 18px;
+
+	 }
+
+/* subs distance between menu elements */
+#unsubs li {
+	display: block; 
+	width: 10px; height: 36px;
+	line-height: 1em;
+
+	 }
+
+#subs {
+
+	font-style: normal;
+	line-height: 2em;
+	text-align: left;
+	font: 110% Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0px;
+	margin: 0px;
+	}
+
+#unsubs {
+
+	font-style: normal;
+	text-align: left;
+	font: 110% Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0px;
+	margin: 0px;
+
+	}
+
+
+#nav li {
+	list-style-type: none; /* gets rid of list bullets  */
+	margin: 0px;
+	padding: 0px;
+	}
+
+	
+
+#nav li ul {
+	position: absolute;
+	width: 10em;
+	left: -999em;
+	}
+
+#nav li:hover #unsubs {
+	position: absolute;
+	top: 245px;
+	right: 40px;
+	left: 120px;
+	z-index: 50;
+	}
+
+#nav li:hover #subs {
+	position: absolute;
+	top: 295px;
+	right: 40px;
+	left: 120px;
+	z-index: 50;
+	}	
+
+
+/* outline:none for firefox to remove outline when clicking on area*/
+
+#subs a {text-decoration: none;
+	color: #333333; 
+	background: none;
+
+	 }
+#subs a:hover {text-decoration: none;
+	background: none;
+	color: #F30; }
+
+#unsubs a {text-decoration: none;
+	color: #333333; 
+	background: none;
+	 }
+#unsubs a:hover {text-decoration: none;
+	background: none;
+	color: #F30;}
+
+
+
+
+/* to highlight current page being viewed*/
+
+
+body#homepage #home a {background: url(images/home.png) 
+	 top left no-repeat; outline: none;}
+
+
+body#aboutshotokanpage #nav #about a {background: url(images/about.png) 
+	 top left no-repeat; outline: none;}
+
+body#aboutshotokanpage #nav #unsubs a {background: none; 
+	 outline: none;}
+
+body#trainingpage #nav #training a {background: url(images/training.png) 
+	 top left no-repeat; outline: none;} 
+
+body#trainingpage #nav #subs a {background: none; 
+	 outline: none;}
+
+body#contactpage #contact a {background: url(images/contact.png) 
+	 top left no-repeat; outline: none;}
+body#gallerypage #gallery a {background: url(images/gallery.png) 
+	 top left no-repeat; outline: none;}
+body#linkspage #links a {background: url(images/links.png) 
+	 top left no-repeat; outline: none;}
+
+
+
+/* END OF LIST CONTENT*/
+
+#highlighted_events a {background: url(images/event_bannerblank.png)
+	 no-repeat; outline: none;}
+#highlighted_events a:hover {background: url(images/event_banner4.png) 
+	 no-repeat; outline: none; }
+
+#highlighted_events a {
+
+  cursor: pointer; /* hand-shaped cursor */
+	display: block; 
+	width: 420px; height: 205px;
+	 }
+#highlighted_events {
+	text-indent: -9000px;
+	}
+
+/* links content */
+
+/* content box for text*/
+
+
+
+
+
+.iskflinks {
+
+	width: 220px;
+	height: 20px;
+	padding: 0px;
+	padding-top: 0px;
+	margin: 0px 0px -30px 170px;
+	}
+
+
+
+.iskflinks li {
+	font: 100% Arial, sans-serif;
+	position: relative;
+	list-style-type: none; /* gets rid of list bullets  */
+	display: inline; 
+	width: 700px;
+	height: 260px;
+	padding: 0px;
+	padding-top: 20px;
+	margin: 0px 0px 100px 0px;
+
+	 }
+
+.iskflinks a {
+	color: #CC0000;
+	text-decoration: none;
+	outline: none;
+text-indent: -9000px;
+}
+
+.iskflinks  h5 {
+	position: absolute;
+
+	font: 100% Arial, sans-serif;
+	color: #CC0000;
+	text-decoration: none;
+	outline: none;
+	color: #333333; 
+	left: 50px;
+	top: 10px;
+	bottom: 0px;
+	font-style: normal;
+	line-height: 1.2em;
+	font-weight: bold;
+}
+
+.iskflinks a:hover {
+color: #CC0000;
+text-decoration: none;
+outline: none;
+text-indent: -9000px;
+}
+
+#iskfphil a {background: url(images/iskf_tiger_small.png)
+	 no-repeat; outline: none;}
+#iskfphil a:hover {background: url(images/iskf_tiger_red_small.png) 
+	 no-repeat; outline: none; }
+
+#iskfcan a {background: url(images/iskf_tiger_small.png)
+	 no-repeat; outline: none;}
+#iskfcan a:hover {background: url(images/iskf_tiger_red_small.png) 
+	 no-repeat; outline: none; }
+
+#iskfman a {background: url(images/iskf_tiger_small.png)
+	 no-repeat; outline: none;}
+#iskfman a:hover {background: url(images/iskf_tiger_red_small.png)  
+	 no-repeat; outline: none; }
+
+#iskfcan a, #iskfman a, #iskfphil a {
+
+	display: block; 
+	width: 50px; height: 50px;
+	 }
+
+#iskfphil {
+			position: absolute;
+			top: 87px;
+			left: 50px;
+			}
+
+
+#iskfcan {
+			position: absolute;
+			top: 160px;
+			left: 50px;
+			}
+
+#iskfman {
+			position: absolute;
+			top: 230px;
+			left: 50px;
+			}
+
+
+
+/* about page */
+
+#history  { 
+	clear: both;
+	padding-top: 20px;
+	}
+
+#history h1 {
+	font: 330% Arial, sans-serif;
+	font-weight: 300;
+	letter-spacing: -3px;
+	color: #333333;   
+	text-align: center;
+	text-indent: 210px;
+
+	}
+
+#history h1 em { 
+	font: 100% Arial, sans-serif;
+	font-weight: bold;
+	color: #CC0000; 
+
+	}
+
+
+.quotestyle_right {
+	padding: 5px 10px 0px 10px ;
+	font: 100% Arial, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	margin: 10px 20px 0px 20px;
+	color: #CC0000;
+ 	width: 270px;
+	float: right;
+	line-height: 2;
+		}
+
+.quoter_right{
+
+	text-align: right;
+		}
+
+.quotestyle_left {
+	padding: 5px 10px 0px 10px ;
+	font: 100% Arial, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	margin: 10px 20px 0px 20px;
+	color: #CC0000;
+ 	width: 270px;
+	float: left;
+	line-height: 2;
+		}
+
+
+.funakoshi {  
+	position: absolute;
+	top: 2750px;
+	left: 24px;
+	} 
+
+
+/* training page */
+
+
+#classes, #kata, #events, #forms, #organizations 
+ 	{/* subhead bars for links and training pages */
+	color: #ffffff;
+	text-indent: 1em;
+	font-variant: small-caps;
+	letter-spacing: 7px;
+	background-color: #595667; 
+	padding: 10px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+
+	}
+
+#reference 
+ 	{/* subhead bars for links and training pages */
+	color: #ffffff;
+	text-indent: 1em;
+	font-variant: small-caps;
+	letter-spacing: 7px;
+	background-color: #595667; 
+	padding: 10px;
+	margin-top: 10em;
+	margin-bottom: 1em;
+
+	}
+
+#classes
+	{
+	margin-top: .3em;
+	margin-bottom: 1em;
+	}
+
+#locations  {
+	color: #CC0000;
+	text-indent: 1em;
+	line-height: 2em;
+	}
+
+#schedule  {
+	color: #CC0000;
+	text-indent: 1em;
+	line-height: 2em;
+	}
+
+
+/* locations */
+
+#main p {
+		margin-bottom: 10px;
+}
+
+#Lasalle a, #monica a {
+
+	display: block; 
+	width: 224px; height: 165px;
+	 }
+
+#Lasalle a, #monica a {
+	color: #CC0000;
+	text-decoration: none;
+	outline: none;
+text-indent: -9000px;
+
+}
+
+
+#Lasalle a {background: url(images/LaSalle_school.jpg)
+	 no-repeat; outline: none;}
+#Lasalle a:hover {background: url(images/LaSalle_school_map.png) 
+	 no-repeat; outline: none; }
+
+#monica a {background: url(images/Danz_Gym.jpg)
+	 no-repeat; outline: none;}
+#monica a:hover {background: url(images/Danz_Gym_map.png)  
+	 no-repeat; outline: none;  }
+
+
+#monica {
+		position: relative;
+		float: right;
+		right: 60px;
+		width: 224px;	
+		margin: 0px 0px 0px 0px;
+border: 2px solid #989898;
+		}
+
+#Lasalle {
+		float: left;
+		position: relative;
+		left: 50px;
+		margin-bottom: 20px;
+		width: 224px;
+border: 2px solid #989898;
+		}
+
+#monica p, #Lasalle p  {
+	
+	font-style: normal;
+	text-align: center;
+	font: 100% Arial, sans-serif;
+	font-weight: bold;
+	margin: 0px;
+	padding: 10px;
+	color: #000000; 
+			}
+
+
+
+/* table */
+
+#schedule {
+	clear: both;
+
+}
+
+#table {
+font-style: normal;
+	text-align: center;
+	font: 100% Arial, sans-serif;
+margin-left: 20px;
+margin-right: 20px;
+caption-side: bottom;
+	clear: both;
+	line-height: 2em;
+}
+
+td, th {
+border: thin dotted black;
+padding: 5px;
+}
+
+/*top grey cells */
+
+
+th {
+background-color:   #989898;
+}
+
+th {
+color: #ffffff; 
+
+}
+
+td {
+background-color:  #dff3fd;
+
+}
+
+/* movies */
+
+
+
+#shodan a, #nidan a, #sandan a, #yondan a, #gondan a, #tekki a, #dai a {
+
+	display: block; 
+	width: 100px; height: 100px;
+	text-indent: -9000px;
+
+	 }
+
+#shodan,  #nidan, #sandan, #yondan, #gondan, #tekki, #dai
+	{
+	float: left;
+	position: relative;
+	left: 0px;
+	margin-bottom: 20px;
+	margin-left: 35px;
+	margin-right: 0px;
+	width: 100px;
+	border: 2px solid #989898;
+	 }
+
+
+
+#shodan a {background: url(images/shodan.jpg)
+	 no-repeat; outline: none;}
+
+#nidan a {background: url(images/nidan.jpg)
+	 no-repeat; outline: none;}
+
+#sandan a {background: url(images/sandan.jpg)
+	 no-repeat; outline: none;}
+#yondan a {background: url(images/yondan.jpg)
+	 no-repeat; outline: none;}
+#gondan a {background: url(images/godan.jpg)
+	 no-repeat; outline: none;}
+#tekki a {background: url(images/shodan_movie.jpg)
+	 no-repeat; outline: none;}
+#dai a {background: url(images/dai.jpg)
+	 no-repeat; outline: none;}
+
+
+
+
+
+#movies p  {
+	
+	font-style: normal;
+	text-align: center;
+	font: 120% Arial, sans-serif;
+	font-weight: bold;
+	margin:  0px;
+	padding: 10px;
+	color: #000000; 
+			}
+
+
+#events{
+clear: both;
+}
+
+/* events  */
+
+#upcoming_events h3 {
+	color: #CC0000;
+	text-indent: 1em;
+	line-height: 2em;
+	margin-bottom: 15px;
+	}
+
+
+
+#upcoming_events li {
+	text-indent: 2em;
+	font: 100% Arial, sans-serif;
+	position: relative;
+	list-style-type: none; /* gets rid of list bullets  */
+	font-style: normal;
+	font-weight: bold;
+	color: #000000; 
+	 }
+
+#upcoming_events p {
+	margin-bottom: 20px;
+	text-align: left;
+	font: 100% Arial, sans-serif;
+	position: relative;
+	list-style-type: none; /* gets rid of list bullets  */
+	font-style: normal;
+		color: #000000; 
+	 }
+
+/* forms  */
+
+ul#pdf_forms {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	}
+
+ul#pdf_forms li {
+	float: left;
+	margin: 10px  10px;
+	padding: 0;
+	}
+
+ul#pdf_forms li a { /* selects only links in the "nav" list */
+	display: block; /* to set width & height of the a element */
+	width: 96px;
+	height: 96px;
+	line-height: 28px;
+	background: url(images/Generic_PDF_small.png) no-repeat;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	text-indent: -9000px;
+	color: #000000; 
+	 outline: none;
+	}
+
+
+ul#pdf_forms p {
+		font-style: normal;
+		font-weight: bold;
+		float: left;
+		margin-top: 2em;
+	line-height: 1em;
+	margin-left: 15px;
+		}
+
+/* CRAZY PDF FORM TEXT SIZING AND COLOR CONFLICTS CAREFUL  */
+
+ul#pdf_forms p em {
+		font: 105% Arial, sans-serif;
+		color: black;
+		}
+
+
+#instructions {
+	text-align: center;
+		color: red; 
+
+}
+
+
+
+
+#sensei {
+	top: 10px;
+	margin-bottom: 60px;
+	left: 150px;
+	text-indent: 12em;
+	font-style: normal;
+	line-height: 2em;
+	font: 90% Arial, sans-serif;
+	font-weight: bold;
+	padding: 0px;
+	z-index: 16;
+	text-align: center;
+	text-decoration: none;
+	}
+#sensei h3 {
+	font-style: normal;
+	line-height: 2em;
+	font: 100% Arial, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	}
+
+
+#sensei a {
+	
+	text-decoration: none;
+	}
+
+#backtotop {
+	position: relative;
+	margin: 20px 20px;
+	font-style: normal;
+	line-height: 2em;
+	font: 100% Arial, sans-serif;
+	font-weight: bold;
+	padding: 0px;
+	z-index: 16;
+	text-align: right;
+	text-decoration: none;
+	clear: both;
+	}
+
+#backtotop a {
+
+	color: #000000; 
+	text-decoration: none;
+	}
+
+#backtotop a:hover {
+color: #CC0000;
+text-decoration: none;
+outline: none;
+}
+
+/* keeping entire page centered in window */
+#wrapper {
+	position: relative;/* not sure if this should be absolute or relative */
+	margin-right: auto;
+	margin-left: auto;/* for fixed layout back use 300px or 200 instead of auto */
+	width: 901px;
+	background-color: white;
+
+	} 
+
+
+#pageheader h1{
+	position: absolute;
+	width: 10em;
+	left: -999em;
+		}
+
+
+/* took out background: white - was leaving a hairline border */
+#pageheader {
+	width: 901px; 
+	height: 210px; 
+	background-image: url(images/header_grad.jpg);
+	background-repeat: no-repeat;
+	margin-top: 0em; 
+
+	} 
+
+
+/* info for the contact page  */
+.address li {
+
+	list-style-type: none; /* gets rid of list bullets  */
+	font-style: normal;
+	line-height: 2em;
+	text-align: center;
+	font: 100% Arial, sans-serif;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+	text-indent: -3em;
+
+	
+	}
+
+.address {
+	margin: 50px 20px;
+	padding: 0px;
+
+	}
+
+.email, .email a{
+	font-style: normal;
+	text-align: center;
+	font: 100% Arial, sans-serif;
+	font-weight: bold;
+	padding: 0px;
+	color: #CC0000; 
+ text-decoration: none;
+	}
+
+.email h2, .address h2 { 
+
+	color: #000000; 
+	}
+
+.email h2 {
+	margin: 8px;
+}
+
+
+
+p.centeredtext {
+	position: absolute;
+	text-align: center;
+	left: 205px;
+	margin: -30px;
+	bottom: 0px;
+	top: 350px;
+
+	font-style: normal;
+	line-height: 2em;
+	font: 120% Arial, sans-serif;
+	font-weight: bold;
+
+	}
+
+
+
+/* info for the gallery page  */
+
+.photogal li {
+	font: 110% Arial, sans-serif;
+	position: relative;
+	list-style-type: none; /* gets rid of list bullets  */
+	display: block; 
+	width: 485px; height: 58px;
+	top: 40px;
+	left: 40px;
+	text-indent: 3em;
+
+	 }
+
+.photogal a {
+	color: #000000;
+	text-decoration: none;
+	outline: none;
+}
+
+.photogal a:hover {
+color: #CC0000;
+text-decoration: none;
+outline: none;
+}
+
+
+
+#background {
+		background-color: white;
+	} 
+
+
+
+
+
+#footer {
+	width: 901px; 
+	height: 1004px; 
+	background-color: white;
+	background-image: url(images/footer-photo1.jpg);
+	background-repeat: no-repeat;
+	margin-top: -7em; 
+	z-index: -3;
+	}
+
+
+#footer h5{
+	position: absolute;
+	left: 300px;
+	bottom: 0px;
+	font-style: normal;
+	line-height: 2em;
+	font: 120% Arial, sans-serif;
+	font-weight: bold;
+	color: #ffffff; 
+
+	}
+
+/* ISKF logo and text*/ 
+
+#iskf {
+	position: absolute;
+	width: 165px; 
+	height: 300px; 
+	left: 30px;
+	top: 630px;
+	background-color: white;
+	background-image: url(images/ISKF-logo-web-.gif);
+	background-repeat: no-repeat;
+	z-index: 3;
+	text-align: center;
+	}
+
+#iskf h5 {
+	position: absolute;
+	left: 3px;
+	bottom: 20px;
+	text-align: center;
+	font-style: normal;
+	line-height: 2em;
+	font: 90% Arial, sans-serif;
+	font-weight: bold;
+	color: #333333;   
+
+	}
+
+
+/* box for moving the nav list	- use margin-top: -80px; margin-left: -10px;*/ 
+
+#linklist {
+	float: left;
+	padding: 0px;
+	margin-left: -20px;
+	margin-top: -70px;
+	width: 10px;
+
+	}
+
+
+/* Events logo */ 
+
+
+
+
+
+
+#senseipic {
+	height: 300px;
+	width: 193px;
+	float: right;
+	margin-top: 17px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 17px;
+	}
+
+
+
+#sensei {
+	clear: both;
+	}
+
+#footer {
+	width: 901px; 
+	height: 1004px; 
+	background-color: white;
+	background-image: url(images/footer-photo1.jpg);
+	background-repeat: no-repeat;
+	margin-top: -7em; 
+	z-index: -100;
+	}
+
+.email, .email a{
+	font-style: normal;
+	text-align: center;
+	font: 100% Arial, sans-serif;
+	font-weight: bold;
+	padding: 0px;
+	color: #CC0000; 
+ text-decoration: none;
+	text-indent: -3em;
+	}
+
+
+
+.address li {
+
+	list-style-type: none; /* gets rid of list bullets  */
+	font-style: normal;
+	line-height: 2em;
+	text-align: center;
+	font: 100% Arial, sans-serif;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+	text-indent: -4em;
+	
+	}
+
+
+.address h2 {
+
+padding-left: 1.5em;
+}
+
+p.centeredtext {
+	position: absolute;
+	text-align: center;
+	left: 168px;
+	margin: -30px;
+	bottom: 0px;
+	top: 360px;
+	font-style: normal;
+	line-height: 2em;
+	font: 120% Arial, sans-serif;
+	font-weight: bold;
+
+	}
+
+
+
+
+
+
+
+
+.photogal li {
+	text-indent: 0em;
+
+	font: 110% Arial, sans-serif;
+	list-style-type: none; /* gets rid of list bullets  */
+	width: 280px; height: 58px;
+	left: 140px;
+	 }
+
+
+
+
+
+
+
+
+/* position:relative gives an element position without changing its in-flow location-then assign z-index*/
+#main, #sensei  { position: relative; }
+
+
+/*  html, body, div, span,
+applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dd, dl, dt, li, ol, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	border: 0;
+border: 1px solid gray;
+} */

@@ -1,0 +1,184 @@
+/* css Winnipeg Shotokan Karate default style */
+
+
+/* reset browsers for compatibility */
+
+/* Don't forget to set a foreground and background color 
+   on the 'html' or 'body' element! */
+
+html, body, div, span,
+applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dd, dl, dt, li, ol, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	border: 0;
+
+}
+
+/* end of reset browsers for compatibility */
+
+/* basic elements */
+
+
+ /*body {
+    background-color: #ddd; /* Background color */
+    color: #222;            /* Foreground color used for text */
+    font-family: Helvetica; 
+    font-size: 14px;
+    margin: 0;              /* Amount of negative space around the outside of the body */
+    padding: 0;             /* Amount of negative space around the inside of the body */
+} */
+
+/* #wrapper {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	width: 480px;
+	background-color: white;
+
+	} */
+
+  /* #pageheader h1{
+	position: absolute;
+	width: 480px;
+	left: -999em;
+		}
+
+
+ #footer {
+	width: 480px; 
+	height: 1004px; 
+	background-color: white;
+	background-image: url(images/footer-photo1.jpg);
+	background-repeat: no-repeat;
+	margin-top: -7em; 
+	z-index: 3;
+
+	}
+
+
+#pageheader {
+	width: 480px; 
+	height: 210px; 
+	background-image: url(images/header_grad.jpg);
+	background-repeat: no-repeat;
+	margin-top: 0em; 
+
+	} 
+
+
+
+ #aboutshotokanpage {
+	background-repeat: no-repeat;
+	background-color: black;
+	}
+
+ #main, #main2 {
+position: relative;
+	float: right;
+	width: 280px;
+	padding: 0px;
+	padding-top: 0px;
+
+	z-index: 12;
+	} 
+
+ #yaguchi1 {
+	height: 498px;
+	width: 301px;
+	text-indent: -9999px;
+	margin-top: 20px;
+	vertical-align:middle; margin-bottom: 3px; 
+	background: url("images/Yaguchi_Bruce.jpg") no-repeat top center; 
+
+	}  */
+
+#nav a  {
+	display: block; width: 165px; height: 104px;
+
+	 }
+
+
+
+/* sets up block size in which to display image items */
+#nav li {
+
+	display: block; 
+	width: 165px; height: 58px;
+	 }
+
+
+#subs, #unsubs {
+	display: none;
+
+	}
+
+#shodan a, #nidan a, #sandan a, #yondan a, #gondan a, #tekki a, #dai a {
+	display: none; 
+	text-indent: -9000px;
+
+	 }
+
+#shodan,  #nidan, #sandan, #yondan, #gondan, #tekki, #dai
+	{
+	display: none; 
+	 }
+
+
+#subs a {
+	width: 160px;
+	height: 28px;
+	padding-top: 10px;
+
+	}
+
+#subs {
+
+	font-style: normal;
+	line-height: 2em;
+	text-align: left;
+	font: 100% Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0px;
+	margin: 0px;
+
+	}
+
+#unsubs {
+
+	font-style: normal;
+	text-align: left;
+	font: 100% Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0px;
+	margin: 0px;
+	line-height: 2em;
+
+	}
+
+
+
+
+p.centeredtext {
+	position: relative;
+	text-align: center;
+	left: 0px;
+	margin: -30px;
+	bottom: 0px;
+	top: 410px;
+
+	font-style: normal;
+	line-height: 2em;
+	font: 140% Arial, sans-serif;
+	font-weight: bold;
+
+	}
+
+
