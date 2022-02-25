@@ -91,7 +91,7 @@
 
 
 
-<script type="text/javascript"
+<!--<script type="text/javascript"
 	src="slideshow.js"></script>
 <script type="text/javascript">
 <!--
@@ -310,7 +310,38 @@ viewer8.add('photos/galleries/dojo_oct_2012/DSCN0945cleanedr.jpg');
 
 
 
-//--></script>
+//--><!--</script>-->
+	
+<link rel="stylesheet" href="css/grid-gallery.min.css">
+<script src="js/grid-gallery.min.js"></script>
+	
+<div class="gg-container">
+  <div class="gg-box">
+    <img src="photos/galleries/dojo_oct_2012/DSCN0945cleanedr.jpg">
+
+  </div>
+  <div class="gg-box"> 
+    <img src="photos/galleries/dojo_oct_2012/DSCN0943cleanedr.jpg">
+
+  </div>
+
+</div>
+	
+gridGallery({
+ // gallery selector
+ selector: "#mSelector",
+ // enable dark mode
+ darkMode: true,
+ // or "horizontal"
+ layout: "square",
+ // space between images
+ gapLength: 4,
+ // row height
+ rowHeight: 180,
+ // column width
+ columnWidth: 200
+ 
+});
 
 
 <div class="photogal"
