@@ -93,6 +93,7 @@
 <div id="main">
 	
 <script src="/path/to/viewer.js"></script>
+<script type="text/javascript">
 
 	<!-- a block container is required -->
 <div>
@@ -101,9 +102,9 @@
 
 <div>
   <ul id="images">
-    <li><img src="picture-1.jpg" alt="Picture 1"></li>
-    <li><img src="picture-2.jpg" alt="Picture 2"></li>
-    <li><img src="picture-3.jpg" alt="Picture 3"></li>
+    <li><img src="photos/galleries/ISKF_Nationals/100_4485.jpg" alt="Picture 1"></li>
+    <li><img src="photos/galleries/ISKF_Nationals/100_5659.jpg" alt="Picture 2"></li>
+    <li><img src="photos/galleries/ISKF_Nationals/100_5667.jpg" alt="Picture 3"></li>
   </ul>
 </div>
 	
@@ -118,9 +119,10 @@ import Viewer from 'viewerjs';
 const gallery = new Viewer(document.getElementById('images'));
 // Then, show one image by click it, or call `gallery.show()`.
 
+
 <!--<script type="text/javascript" 
-	src="js/grid-gallery.min.js"></script>
-<script type="text/javascript">
+<!--src="js/grid-gallery.min.js"></script>
+<!--<script type="text/javascript">
 
 
   var viewer1 = new PhotoViewer();
