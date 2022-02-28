@@ -7,8 +7,7 @@
 <link rel="stylesheet" type="text/css" href="shotokan.css" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	
-<link  href="/path/to/viewer.css" rel="stylesheet">
-<script src="/path/to/viewer.js"></script>
+<link rel="stylesheet" href="venobox/dist/venobox.min.css" />
 	
 <link media="only screen and (max-device-width: 480px)"
     href="iphone.css" type="text/css" rel="stylesheet" />
@@ -92,30 +91,6 @@
 
 <div id="main">
 	
-<script src="/path/to/viewer.js"></script>
-<script type="text/javascript">
-
-	<!-- a block container is required -->
-<div>
-  <img id="image" src="picture.jpg" alt="Picture">
-</div>
-
-<div>
-  <ul id="images">
-    <li><img src="photos/galleries/ISKF_Nationals/100_4485.jpg" alt="Picture 1"></li>
-    <li><img src="photos/galleries/ISKF_Nationals/100_5659.jpg" alt="Picture 2"></li>
-    <li><img src="photos/galleries/ISKF_Nationals/100_5667.jpg" alt="Picture 3"></li>
-  </ul>
-</div>
-	
-import 'viewerjs/dist/viewer.css';
-import Viewer from 'viewerjs';
-
-
-
-
-const gallery = new Viewer(document.getElementById('images'));
-
 
 
 <!--<script type="text/javascript" 
@@ -355,6 +330,9 @@ viewer8.add('photos/galleries/dojo_oct_2012/DSCN0945cleanedr.jpg');
 
 </div>-->
 
+<a class="venobox" href="image01"><img src="photos/galleries/dojo_oct_2012/DSCN0945cleanedr.jpg" alt="image alt"/></a>
+
+
 
 <div class="photogal"
 <li><h1> </h1></li>
@@ -411,5 +389,7 @@ viewer8.add('photos/galleries/dojo_oct_2012/DSCN0945cleanedr.jpg');
   
 
 </div>	
+
+<script src="venobox/dist/venobox.min.js"></script>
 </body>
 </html>
