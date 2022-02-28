@@ -5,8 +5,9 @@
 <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
 <title>Winnipeg Shotokan Karate</title>
 <link rel="stylesheet" type="text/css" href="shotokan.css" />
-<link rel="stylesheet" href="css/grid-gallery.min.css">
-<script src="js/grid-gallery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="/js/slippry.min.js"></script>
+<link rel="stylesheet" href="/css/slippry.css" />
 
 <link media="only screen and (max-device-width: 480px)"
     href="iphone.css" type="text/css" rel="stylesheet" />
@@ -313,11 +314,25 @@ viewer8.add('photos/galleries/dojo_oct_2012/DSCN0945cleanedr.jpg');
 
 
 //--></script>
+	  
+<ul id="slippry-demo">
+  <li>
+    <a href="#slide1"><img src="photos/galleries/dojo_jan_2012/IMG_3994cleanedr.jpg" alt="Dojo"></a>
+  </li>
+  <li>
+    <a href="#slide2"><img src="photos/galleries/dojo_oct_2012/DSCN0945cleanedr.jpg"  alt="Dojo 2"></a>
+  </li>
+
+</ul>
 
 </div>
 	</div>
 	
-<link rel="stylesheet" href="css/grid-gallery.min.css">
+jQuery(document).ready(function(){
+jQuery('selector').slippry()
+});
+	
+<!--<link rel="stylesheet" href="css/grid-gallery.min.css">
 <script src="js/grid-gallery.min.js"></script>
 	
 <div class="gg-container">
@@ -330,7 +345,7 @@ viewer8.add('photos/galleries/dojo_oct_2012/DSCN0945cleanedr.jpg');
 
   </div>
 
-</div>
+</div>-->
 
 
 <div class="photogal"
@@ -343,7 +358,7 @@ viewer8.add('photos/galleries/dojo_oct_2012/DSCN0945cleanedr.jpg');
 <li><h1><a href="javascript:void(viewer4.show(0))"> Dojo 2008/2009</a></h1></li>
 <li><h1><a href="javascript:void(viewer5.show(0))">Dojo Older Photos</a></h1></li>
 <li><h1><a href="javascript:void(viewer6.show(0))">Interesting Moments From Sensei Loreth's Past</a></h1></li>
-<li><h1><a href="javascript:void(viewer1.show(0))">Test</a></h1></li>
+<!--<li><h1><a href="javascript:void(viewer1.show(0))">Test</a></h1></li>-->
 
   </div>
 
