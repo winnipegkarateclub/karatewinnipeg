@@ -6,9 +6,10 @@
 <title>Winnipeg Shotokan Karate</title>
 <link rel="stylesheet" type="text/css" href="shotokan.css" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="/js/slippry.min.js"></script>
-<link rel="stylesheet" href="/css/slippry.css" />
-
+	
+<link  href="/path/to/viewer.css" rel="stylesheet">
+<script src="/path/to/viewer.js"></script>
+	
 <link media="only screen and (max-device-width: 480px)"
     href="iphone.css" type="text/css" rel="stylesheet" />
 
@@ -90,11 +91,34 @@
 
 
 <div id="main">
+	
+<script src="/path/to/viewer.js"></script>
 
-<div class="gg-container">
-  <div class="gg-box">
+	<!-- a block container is required -->
+<div>
+  <img id="image" src="picture.jpg" alt="Picture">
+</div>
 
-<script type="text/javascript" 
+<div>
+  <ul id="images">
+    <li><img src="picture-1.jpg" alt="Picture 1"></li>
+    <li><img src="picture-2.jpg" alt="Picture 2"></li>
+    <li><img src="picture-3.jpg" alt="Picture 3"></li>
+  </ul>
+</div>
+	
+// You should import the CSS file.
+import 'viewerjs/dist/viewer.css';
+import Viewer from 'viewerjs';
+
+
+
+// View a list of images.
+// Note: All images within the container will be found by calling `element.querySelectorAll('img')`.
+const gallery = new Viewer(document.getElementById('images'));
+// Then, show one image by click it, or call `gallery.show()`.
+
+<!--<script type="text/javascript" 
 	src="js/grid-gallery.min.js"></script>
 <script type="text/javascript">
 
@@ -315,22 +339,6 @@ viewer8.add('photos/galleries/dojo_oct_2012/DSCN0945cleanedr.jpg');
 
 //--></script>
 	  
-<ul id="slippry-demo">
-  <li>
-    <a href="#slide1"><img src="photos/galleries/dojo_jan_2012" alt="Dojo"></a>
-  </li>
-  <li>
-    <a href="#slide2"><img src="photos/galleries/dojo_oct_2012"  alt="Dojo 2"></a>
-  </li>
-
-</ul>
-
-</div>
-	</div>
-	
-jQuery(document).ready(function(){
-jQuery('selector').slippry()
-});
 	
 <!--<link rel="stylesheet" href="css/grid-gallery.min.css">
 <script src="js/grid-gallery.min.js"></script>
@@ -350,7 +358,7 @@ jQuery('selector').slippry()
 
 <div class="photogal"
 <li><h1> </h1></li>
-<li><h1><a href="javascript:void(viewer8.show(0))">Dojo Seminar Oct 2012</a></h1></li>
+<li><h1><a href="javascript:void(gallery.show())">Dojo Seminar Oct 2012</a></h1></li>
 <li><h1><a href="javascript:void(viewer7.show(0))">Dojo Class Jan 2012</a></h1></li>
 <li><h1><a href="javascript:void(viewer1.show(0))">Nationals 2010</a></h1></li>
 <li><h1><a href="javascript:void(viewer2.show(0))">Stonewall Tournament 2010</a></h1></li>
