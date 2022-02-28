@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="shotokan.css" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	
-<link rel="stylesheet" href="venobox/dist/venobox.min.css" />
+<link rel="stylesheet" href="venobox/venobox.min.css" type="text/css" media="screen" />
 	
 <link media="only screen and (max-device-width: 480px)"
     href="iphone.css" type="text/css" rel="stylesheet" />
@@ -330,13 +330,13 @@ viewer8.add('photos/galleries/dojo_oct_2012/DSCN0945cleanedr.jpg');
 
 </div>-->
 
-<a class="venobox" href="image01"><img src="photos/galleries/dojo_oct_2012/DSCN0945cleanedr.jpg" alt="image alt"/></a>
+<a class="venobox" data-gall="Dojo Seminar Oct 2012" href="photos/galleries/dojo_oct_2012/DSCN0945cleanedr.jpg"><img src="photos/galleries/dojo_oct_2012/DSCN0945cleanedr.jpg" /></a>
 
 
 
 <div class="photogal"
 <li><h1> </h1></li>
-<li><h1><a href="javascript:void(gallery.show())">Dojo Seminar Oct 2012</a></h1></li>
+<li><h1><a href="venobox.open('venobox')">Dojo Seminar Oct 2012</a></h1></li>
 <li><h1><a href="javascript:void(gallery.show(0))">Dojo Class Jan 2012</a></h1></li>
 <li><h1><a href="gallery.show()">Nationals 2010</a></h1></li>
 <li><h1><a href="gallery.show(0)">Stonewall Tournament 2010</a></h1></li>
@@ -390,10 +390,6 @@ viewer8.add('photos/galleries/dojo_oct_2012/DSCN0945cleanedr.jpg');
 
 </div>	
 
-<script src="venobox/dist/venobox.min.js">
-new VenoBox({
-  selector: '.venobox'
-});
-</script>
+<script type="text/javascript" src="venobox/venobox.min.js"></script>
 </body>
 </html>
