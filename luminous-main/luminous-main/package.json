@@ -1,0 +1,189 @@
+{
+  "name": "luminous-lightbox",
+  "version": "2.4.0",
+  "description": "A simple, lightweight, no-dependencies JavaScript image lightbox.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imgix/luminous.git"
+  },
+  "keywords": [
+    "javascript",
+    "lightbox"
+  ],
+  "author": "imgix",
+  "license": "BSD-2",
+  "bugs": {
+    "url": "https://github.com/imgix/luminous/issues"
+  },
+  "homepage": "https://github.com/imgix/luminous#readme",
+  "contributors": [
+    "Frederick Fogerty <frederick.fogerty@gmail.com> (https://github.com/frederickfogerty)",
+    "Jakub Duras <jakub@duras.me> (https://duras.me)",
+    "Gwendolen Lynch <gwendolen.lynch@gmail.com> (https://github.com/GwendolenLynch)"
+  ],
+  "main": "lib/lum.js",
+  "module": "es/lum.js",
+  "jsnext:main": "es/lum.js",
+  "scripts": {
+    "build": "npm run clean && run-p build:css:** build:js:**",
+    "build:serial": "npm run clean && run-s build:css:** build:js:**",
+    "build:css:dev": "mkdir -p dist && cp src/css/luminous-basic.css dist/",
+    "build:css:prod": "mkdir -p dist && postcss src/css/luminous-basic.css > dist/luminous-basic.min.css",
+    "build:js:dist:prod": "webpack --env build && cp dist/luminous.min.js dist/luminous.js",
+    "build:js:lib:commonjs": "cross-env BABEL_ENV=commonjs babel src/js --out-dir lib --source-maps",
+    "build:js:lib:es": "cross-env BABEL_ENV=es babel src/js --out-dir es --source-maps",
+    "build:watch": "webpack --progress --colors --watch --env dev",
+    "clean": "rimraf lib es dist",
+    "dev": "npm run build:watch",
+    "format:check": "prettier --list-different \"{src,test}/**/*.js\"",
+    "format": "prettier --write \"{src,test}/**/*.js\"",
+    "release": "npm run build && git add dist src/js/Luminous.js && standard-version -a",
+    "start": "npm run dev",
+    "test:watch": "karma start config/karma/karma-local.config.js",
+    "test:local": "karma start config/karma/karma-local.config.js --singleRun",
+    "test:ci": "karma start config/karma/karma-ci.config.js --singleRun",
+    "test": "npm run test:local",
+    "lint": "eslint \"{src,test}/**/*.js\"",
+    "release:dryRun": "npx node-env-run --exec 'semantic-release --dryRun'",
+    "release:publish": "semantic-release"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.16.8",
+    "@babel/core": "7.16.12",
+    "@babel/plugin-proposal-class-properties": "7.16.7",
+    "@babel/preset-env": "7.16.11",
+    "@google/semantic-release-replace-plugin": "1.1.0",
+    "@semantic-release/changelog": "6.0.1",
+    "@semantic-release/commit-analyzer": "9.0.2",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/github": "8.0.2",
+    "@semantic-release/npm": "8.0.3",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "8.2.3",
+    "babel-preset-env": "7.0.0-beta.3",
+    "chai": "4.3.6",
+    "closure-webpack-plugin": "2.5.0",
+    "cross-env": "7.0.3",
+    "cssnano": "5.0.17",
+    "cssnano-preset-advanced": "5.1.12",
+    "eslint": "7.32.0",
+    "eslint-config-google": "0.14.0",
+    "eslint-config-prettier": "8.3.0",
+    "google-closure-compiler-js": "20200719.0.0",
+    "jasmine-core": "3.10.1",
+    "karma": "6.3.17",
+    "karma-chrome-launcher": "3.1.0",
+    "karma-firefox-launcher": "2.1.2",
+    "karma-jasmine": "4.0.1",
+    "karma-webpack": "4.0.2",
+    "npm-run-all": "4.1.5",
+    "postcss": "8.4.7",
+    "postcss-banner": "4.0.1",
+    "postcss-cli": "9.1.0",
+    "prettier": "2.5.1",
+    "rimraf": "3.0.2",
+    "semantic-release": "18.0.1",
+    "standard-version": "9.3.2",
+    "webpack": "4.46.0",
+    "webpack-cli": "4.9.2",
+    "webpack-closure-compiler": "2.1.6",
+    "yargs": "17.3.1"
+  },
+  "release": {
+    "branches": [
+      "main",
+      {
+        "name": "next",
+        "prerelease": "rc"
+      },
+      {
+        "name": "beta",
+        "prerelease": true
+      },
+      {
+        "name": "alpha",
+        "prerelease": true
+      }
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@google/semantic-release-replace-plugin",
+        {
+          "replacements": [
+            {
+              "files": [
+                "src/js/Luminous.js"
+              ],
+              "from": "this.VERSION = \".*\"",
+              "to": "this.VERSION = \"${nextRelease.version}\"",
+              "results": [
+                {
+                  "file": "src/js/Luminous.js",
+                  "hasChanged": true,
+                  "numMatches": 1,
+                  "numReplacements": 1
+                }
+              ],
+              "countMatches": true
+            }
+          ]
+        }
+      ],
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "src/**",
+            "dist/**",
+            "package.json",
+            "changelog.md"
+          ],
+          "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes} [skip ci]"
+        }
+      ],
+      [
+        "@semantic-release/github",
+        {
+          "assets": [
+            {
+              "path": "dist/Luminous.min.js",
+              "label": "Minified build"
+            },
+            {
+              "path": "dist/Luminous.js",
+              "label": "Standard build"
+            },
+            {
+              "path": "dist/luminous-basic.css",
+              "label": "CSS"
+            },
+            {
+              "path": "dist/luminous-basic.min.css",
+              "label": "Minified CSS"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "browserslist": [
+    "ie 11",
+    "last 2 edge versions",
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions",
+    "last 2 iOS versions",
+    "last 2 Android versions"
+  ],
+  "files": [
+    "bower.json",
+    "CHANGELOG.md",
+    "dist",
+    "lib",
+    "es"
+  ]
+}
