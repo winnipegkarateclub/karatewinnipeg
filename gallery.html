@@ -5,8 +5,8 @@
 <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
 <title>Winnipeg Shotokan Karate</title>
 <link rel="stylesheet" type="text/css" href="shotokan.css" />
-<link  href="/path/to/viewer.css" rel="stylesheet">
-<script src="/path/to/viewer.js"></script>
+<link  href="/viewerjs/dist/viewer.css" rel="stylesheet">
+<script src="/viewerjs/dist/viewer.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	
 
@@ -316,29 +316,26 @@ viewer8.add('photos/galleries/dojo_oct_2012/DSCN0945cleanedr.jpg');
 
 
 //--></script>
-	  
-	
-<!--<link rel="stylesheet" href="css/grid-gallery.min.css">
-<script src="js/grid-gallery.min.js"></script>
-	
-<div class="gg-container">
-  <div class="gg-box">
-    <img src="photos/galleries/dojo_oct_2012/DSCN0945cleanedr.jpg">
 
-  </div>
-  <div class="gg-box"> 
-    <img src="photos/galleries/dojo_oct_2012">
 
-  </div>
+<div>
+  <ul id="images">
+    <li><img src="photos/galleries/dojo_oct_2012/DSCN0945cleanedr.jpg" alt="Picture 1"></li>
+    <li><img src="photos/galleries/dojo_oct_2012/DSCN0943cleanedr.jpg" alt="Picture 2"></li>
+    <li><img src="photos/galleries/dojo_oct_2012/DSCN0941cleanedr.jpg" alt="Picture 3"></li>
+  </ul>
+</div>
 
-</div>-->
-	
+<script>	
+import Viewer from 'viewerjs';
+const gallery = new Viewer(document.getElementById('images'));
+</script>
 	
 <div class="photogal"
 <li><h1> </h1></li>
-<li><h1><a href="javascript:void(viewer8.show(0))">Dojo Seminar Oct 2012</a></h1></li>
-<li><h1><a href="javascript:void(viewer7.show(0)))">Dojo Class Jan 2012</a></h1></li>
-<li><h1><a href="javascript:void(viewer1.show(0))">Nationals 2010</a></h1></li>
+<li><h1><a href="gallery.show()">Dojo Seminar Oct 2012</a></h1></li>
+<li><h1><a href="javascript:void(gallery.show(0)))">Dojo Class Jan 2012</a></h1></li>
+<li><h1><a href='gallery.show()'>Nationals 2010</a></h1></li>
 <li><h1><a href="javascript:void(viewer2.show(0))">Stonewall Tournament 2010</a></h1></li>
 <li><h1><a href="javascript:void(viewer3.show(0))">Sensei's Seminar In India</a></h1></li>
 <li><h1><a href="javascript:void(viewer4.show(0))"> Dojo 2008/2009</a></h1></li>
